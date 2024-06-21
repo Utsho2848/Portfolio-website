@@ -47,10 +47,17 @@
     color: var(--color-primary);
 }
 
+.service_list p {
+    font-size: 0.9rem;
+}
 
 @media screen and (max-width:1024px) {
     .services_container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .service {
+        height: auto;
     }
 }
 
