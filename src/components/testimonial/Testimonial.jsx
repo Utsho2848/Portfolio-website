@@ -5,7 +5,7 @@ import IMG2 from '../../assets/assets/avatar2.jpg'
 import IMG3 from '../../assets/assets/avatar3.jpg'
 import IMG4 from '../../assets/assets/avatar4.jpg'
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -44,10 +44,11 @@ const Testimonial = () => {
             <h2>Testimonials</h2>
             <Swiper className="container testimonials_container"
 
-                modules={[Pagination, Navigation]}
+                modules={[Pagination, Navigation, Autoplay]}
                 spaceBetween={40}
                 slidesPerView={1}
                 navigation
+                autoplay={true}
                 pagination={{ clickable: true }}
             >
 
