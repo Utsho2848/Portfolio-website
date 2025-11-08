@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "avatar1.jpg",
+    "name": "Baby",
+    "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas voluptatem, repudiandae aut illum pariatur dignissimos labore rem. Soluta, est."
+  },
+  {
+    "id": 2,
+    "image": "avatar2.jpg",
+    "name": "Bodda",
+    "review": "DaLorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati soluta rerum iure suscipit fugit explicabo adipisci modi! Quidem."
+  },
+  {
+    "id": 3,
+    "image": "avatar3.jpg",
+    "name": "Sakibbai",
+    "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, incidunt deserunt ipsa soluta est quos animi eligendi distinctio modi, voluptas omnis. Eum porro voluptatem esse."
+  },
+  {
+    "id": 4,
+    "image": "avatar4.jpg",
+    "name": "Janu",
+    "review": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusantium eos expedita vero totam consequatur."
+  }
+]

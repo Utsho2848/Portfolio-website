@@ -22,24 +22,24 @@ const About = () => {
                         <article className="about_card">
                             <FaAward className='about_icon' />
                             <h5>Experience</h5>
-                            <small>3+ Years Working</small>
+                            <small>Only personal Project</small>
                         </article>
 
 
                         <article className="about_card">
                             <FaRegUser className='about_icon' />
                             <h5>Clients</h5>
-                            <small>200+ World Wide</small>
+                            <small>no clients at all</small>
                         </article>
 
 
                         <article className="about_card">
                             <FaFileCode className='about_icon' />
                             <h5>Projects</h5>
-                            <small>20+ Completed</small>
+                            <small>10+ personal project</small>
                         </article>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aspernatur nisi corrupti. Sapiente quae commodi distinctio voluptates dicta architecto omnis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, soluta!</p>
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>
             </div>

@@ -33,6 +33,103 @@
 }
 
 
+/*  */
+
+/* Portfolio Container Styling */
+.portfolio-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e, #2c2c3a);
+  background-size: 200% 200%;
+  animation: portfolioGradientShift 15s ease infinite;
+  padding: 2rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Gradient Animation */
+@keyframes portfolioGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Portfolio Item Styling */
+.portfolio_item {
+  background-color: #2a2a3d;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  animation: floatPortfolioCard 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.portfolio_item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* Floating Animation */
+@keyframes floatPortfolioCard {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Image Styling */
+.portfolio_item_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* CTA Buttons */
+.portfolio_item-cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.btn-primary {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/*  */
+
+
 @media screen and (max-width:1024px) {
     .portfolio-container {
         grid-template-columns: 1fr 1fr;
