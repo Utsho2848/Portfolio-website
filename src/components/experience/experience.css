@@ -40,6 +40,87 @@
     color: var(--color-primary);
 }
 
+
+/*  */
+
+/* Experience Container Styling */
+.experience_container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e, #2c2c3a);
+  background-size: 200% 200%;
+  animation: experienceGradientShift 15s ease infinite;
+  padding: 2rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Gradient Animation */
+@keyframes experienceGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Experience Card Styling */
+.experience_frontend,
+.experience_backend {
+  background-color: #2a2a3d;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  animation: floatExperienceCard 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.experience_frontend:hover,
+.experience_backend:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* Floating Animation */
+@keyframes floatExperienceCard {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Experience Details */
+.experience_details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience_details_icon {
+  color: #00ffff;
+  font-size: 1.2rem;
+}
+
+.text-light {
+  color: #ccc;
+}
+
+/*  */
+
 @media screen and (max-width:1024px) {
     .experience_container {
         grid-template-columns: 1fr;

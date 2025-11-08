@@ -1,0 +1,24 @@
+[
+  {
+    "category": "Frontend Development",
+    "skills": [
+      { "name": "HTML", "level": "Experienced" },
+      { "name": "CSS", "level": "Intermediate" },
+      { "name": "Javascript", "level": "Experienced" },
+      { "name": "BootStrap", "level": "Experienced" },
+      { "name": "Tailwind CSS", "level": "Experienced" },
+      { "name": "React", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Backend Development",
+    "skills": [
+      { "name": "MongoDB", "level": "Experienced" },
+      { "name": "PHP", "level": "Beginner" },
+      { "name": "MySQL", "level": "Intermediate" },
+      { "name": "Python", "level": "Beginner" },
+      { "name": "FireBase", "level": "Experienced" },
+      { "name": "Netlify", "level": "Intermediate" }
+    ]
+  }
+]

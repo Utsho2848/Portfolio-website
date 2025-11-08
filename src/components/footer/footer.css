@@ -1,63 +1,105 @@
+/* Footer Base */
 footer {
-    background: var(--color-primary);
-    padding: 3rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 7rem;
+  background: linear-gradient(135deg, #1a1a2e, #2c2c3a);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 7rem;
+  color: #f0f0f0;
+  box-shadow: 0 -5px 15px rgba(0, 255, 255, 0.1);
 }
 
-footer a {
-    color: var(--color-bg);
-}
-
+/* Logo */
 .footer_logo {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: inline-block;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  display: inline-block;
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease;
 }
 
+.footer_logo:hover {
+  transform: scale(1.05);
+}
+
+/* Permalinks */
 .permalinks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
 }
 
+.permalinks a {
+  color: #f0f0f0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.permalinks a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #00ffff;
+  transition: width 0.3s ease;
+}
+
+.permalinks a:hover {
+  color: #00ffff;
+}
+
+.permalinks a:hover::after {
+  width: 100%;
+}
+
+/* Social Icons */
 .footer_socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .footer_socials a {
-    background: var(--color-bg);
-    color: var(--color-white);
-    padding: 0.7rem;
-    display: flex;
-    border: 1px solid transparent;
+  background: #2a2a3d;
+  color: #00ffff;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
 .footer_socials a:hover {
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
+/* Copyright */
 .footer_copyright {
-    margin-bottom: 4rem;
-    color: var(--color-bg);
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: #ccc;
 }
 
-@media screen and (max-width:600px) {
-    .permalimks {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-    .footer_socials {
-        margin-bottom: 2.6rem;
-    }
+  .footer_socials {
+    margin-bottom: 2rem;
+  }
 }

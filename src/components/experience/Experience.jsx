@@ -1,103 +1,34 @@
 import React from 'react';
-import './experience.css'
+import './experience.css';
 import { LuBadgeCheck } from "react-icons/lu";
+import experienceData from '../../data/experience.json';
 
 const Experience = () => {
-    return (
-        <section id="experience">
-            <h5>What's Skills I have</h5>
-            <h2>My Experience</h2>
+  return (
+    <section id="experience">
+      <h5>What's Skills I have</h5>
+      <h2>My Experience</h2>
 
-            <div className="container experience_container">
-                <div className="experience_frontend">
-                    <h3>Frontend Development</h3>
-                    <div className="experience_content">
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>HTML</h4>
-                                <small className='text-light'>Experienced</small></div>
-                        </article>
-
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>CSS</h4>
-                                <small className='text-light'>Intermediate</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>Javascript</h4>
-                                <small className='text-light'>Experienced</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div>
-                                <h4>BootStrap</h4>
-                                <small className='text-light'>Experienced</small>
-                            </div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>Tailwind CSS</h4>
-                                <small className='text-light'>Experienced</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>React</h4>
-                                <small className='text-light'>Intermediate</small></div>
-                        </article>
-
-                    </div>
-                </div>
-                <div className="experience_backend">
-
-                    <h3>Backend Development</h3>
-                    <div className="experience_content">
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>MongoDB</h4>
-                                <small className='text-light'>Experienced</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>PHP</h4>
-                                <small className='text-light'>Beginner</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>MySQL</h4>
-                                <small className='text-light'>Intermediate</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>Python</h4>
-                                <small className='text-light'>Beginner</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>FireBase</h4>
-                                <small className='text-light'>Experienced</small></div>
-                        </article>
-
-                        <article className="experience_details">
-                            <LuBadgeCheck className='experience_details_icon' />
-                            <div><h4>Netlify</h4>
-                                <small className='text-light'>Intermediate</small></div>
-                        </article>
-
-                    </div>
-                </div>
+      <div className="container experience_container">
+        {experienceData.map(({ category, skills }, index) => (
+          <div className={`experience_${category.toLowerCase().split(' ')[0]}`} key={index}>
+            <h3>{category}</h3>
+            <div className="experience_content">
+              {skills.map(({ name, level }, i) => (
+                <article className="experience_details" key={i}>
+                  <LuBadgeCheck className='experience_details_icon' />
+                  <div>
+                    <h4>{name}</h4>
+                    <small className='text-light'>{level}</small>
+                  </div>
+                </article>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Experience;

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "UI/UX Design",
+    "features": [
+      "User-centered wireframes and mockups",
+      "Responsive mobile-first layouts",
+      "Prototyping with Figma or Adobe XD",
+      "Design system creation"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Web Development",
+    "features": [
+      "Modern React/Next.js development",
+      "RESTful API integration",
+      "Responsive and accessible UI",
+      "Performance optimization",
+      "SEO best practices",
+      "Cross-browser compatibility"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Content Creation",
+    "features": [
+      "Technical blog writing",
+      "SEO-optimized content",
+      "Scriptwriting for videos",
+      "Social media content strategy",
+      "Newsletter and email copywriting"
+    ]
+  }
+]
