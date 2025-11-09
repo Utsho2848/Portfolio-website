@@ -6,9 +6,9 @@ import { TbBrandGmail } from "react-icons/tb";
 const HeaderSocial = () => {
     return (
         <div className='header_social'>
-            <a href="https://linkedin.com" target='_blank'><FaLinkedinIn /></a>
-            <a href="https://github.com" target='_blank'><FaGithub /></a>
-            <a href="https://gmail.com" target='_blank'><TbBrandGmail /></a>
+            <a href="https://linkedin.com" target='_blank' rel="noreferrer"><FaLinkedinIn /></a>
+            <a href="https://github.com" target='_blank' rel="noreferrer"><FaGithub /></a>
+            <a href="https://gmail.com" target='_blank' rel="noreferrer"><TbBrandGmail /></a>
         </div>
     );
 };
