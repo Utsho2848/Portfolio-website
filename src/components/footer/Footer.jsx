@@ -18,8 +18,8 @@ const Footer = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className='footer_socials'>
-                <a target='_blank' href="https://www.facebook.com/utsho.khan1221"><FaFacebook /></a>
-                <a target='_blank' href="https://www.instagram.com"><FaInstagramSquare /></a>
+                <a target='_blank' rel="noreferrer" href="https://www.facebook.com/utsho.khan1221"><FaFacebook /></a>
+                <a target='_blank' rel="noreferrer" href="https://www.instagram.com"><FaInstagramSquare /></a>
                 <a href="mailto:shohanurrahman6761@gmail.com?subject=Hello&body=I saw your portfolio...">
   <TbBrandGmail />
 </a>
